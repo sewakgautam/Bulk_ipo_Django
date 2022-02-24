@@ -1,0 +1,11 @@
+{% extends 'apply/base.html' %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+{{add_account.as_p}}
+<input type="submit" value="Add Account" />
+</form>
+
+{% endblock  %}
